@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Aurora_Store/static/css/main.49497d4e.chunk.css",
-    "main.js": "/Aurora_Store/static/js/main.de05b82c.chunk.js",
-    "main.js.map": "/Aurora_Store/static/js/main.de05b82c.chunk.js.map",
+    "main.css": "/Aurora_Store/static/css/main.796462bf.chunk.css",
+    "main.js": "/Aurora_Store/static/js/main.2ebb211d.chunk.js",
+    "main.js.map": "/Aurora_Store/static/js/main.2ebb211d.chunk.js.map",
     "runtime-main.js": "/Aurora_Store/static/js/runtime-main.eacd3ea2.js",
     "runtime-main.js.map": "/Aurora_Store/static/js/runtime-main.eacd3ea2.js.map",
     "static/js/2.8ead8d3c.chunk.js": "/Aurora_Store/static/js/2.8ead8d3c.chunk.js",
     "static/js/2.8ead8d3c.chunk.js.map": "/Aurora_Store/static/js/2.8ead8d3c.chunk.js.map",
     "index.html": "/Aurora_Store/index.html",
-    "precache-manifest.5c2838269fe955b8fb59d22413b01843.js": "/Aurora_Store/precache-manifest.5c2838269fe955b8fb59d22413b01843.js",
+    "precache-manifest.56192b08fad4969d12288e007e69ebc5.js": "/Aurora_Store/precache-manifest.56192b08fad4969d12288e007e69ebc5.js",
     "service-worker.js": "/Aurora_Store/service-worker.js",
-    "static/css/main.49497d4e.chunk.css.map": "/Aurora_Store/static/css/main.49497d4e.chunk.css.map",
+    "static/css/main.796462bf.chunk.css.map": "/Aurora_Store/static/css/main.796462bf.chunk.css.map",
     "static/js/2.8ead8d3c.chunk.js.LICENSE.txt": "/Aurora_Store/static/js/2.8ead8d3c.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/Aurora_Store/static/media/logo.434a2f53.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eacd3ea2.js",
     "static/js/2.8ead8d3c.chunk.js",
-    "static/css/main.49497d4e.chunk.css",
-    "static/js/main.de05b82c.chunk.js"
+    "static/css/main.796462bf.chunk.css",
+    "static/js/main.2ebb211d.chunk.js"
   ]
 }
