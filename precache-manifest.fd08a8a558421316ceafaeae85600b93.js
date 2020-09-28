@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b9d2aad92cefbe59fc2d018b0e76a90",
+    "revision": "9b3896e48fa955622df9479a552ceb40",
     "url": "/Aurora_Store/index.html"
   },
   {
-    "revision": "60c08d6bfcdf0da94e43",
-    "url": "/Aurora_Store/static/css/main.4917aea0.chunk.css"
+    "revision": "8c826e9d94f836a0f2e1",
+    "url": "/Aurora_Store/static/css/main.9d0f2847.chunk.css"
   },
   {
     "revision": "61e77c0ddc20483c7989",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Aurora_Store/static/js/2.ecdd8062.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60c08d6bfcdf0da94e43",
-    "url": "/Aurora_Store/static/js/main.f4d4eae5.chunk.js"
+    "revision": "8c826e9d94f836a0f2e1",
+    "url": "/Aurora_Store/static/js/main.b6ed0099.chunk.js"
   },
   {
     "revision": "f99b3571e86b489ed861",
