@@ -1,0 +1,13 @@
+@import "./../../../App.scss";
+.showcase-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 568px) {
+  .showcase-grid {
+    flex-direction: column;
+  }
+}

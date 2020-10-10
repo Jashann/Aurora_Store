@@ -1,0 +1,467 @@
+//Margin & Padding
+@mixin margin($x) {
+  margin: $x;
+}
+@mixin marginX($x) {
+  margin-right: $x;
+  margin-left: $x;
+}
+@mixin marginY($x) {
+  margin-top: $x;
+  margin-bottom: $x;
+}
+@mixin marginL($x) {
+  margin-left: $x;
+}
+@mixin marginR($x) {
+  margin-right: $x;
+}
+@mixin marginT($x) {
+  margin-top: $x;
+}
+@mixin marginB($x) {
+  margin-bottom: $x;
+}
+
+@mixin padding($x) {
+  padding: $x;
+}
+@mixin paddingX($x) {
+  padding: $x;
+  padding-left: $x;
+}
+@mixin paddingY($x) {
+  padding-top: $x;
+  padding-bottom: $x;
+}
+@mixin paddingL($x) {
+  padding-left: $x;
+}
+@mixin paddingR($x) {
+  padding-right: $x;
+}
+@mixin paddingB($x) {
+  padding-bottom: $x;
+}
+@mixin paddingT($x) {
+  padding-top: $x;
+}
+
+.m-5 {
+  @include margin(5rem);
+}
+.m-4 {
+  @include margin(4rem);
+}
+.m-3 {
+  @include margin(3rem);
+}
+.m-2 {
+  @include margin(2rem);
+}
+.m-1 {
+  @include margin(1rem);
+}
+
+.mx-5 {
+  @include marginX(5rem);
+}
+.mx-4 {
+  @include marginX(4rem);
+}
+.mx-3 {
+  @include marginX(3rem);
+}
+.mx-2 {
+  @include marginX(2rem);
+}
+.mx-1 {
+  @include marginX(1rem);
+}
+
+.my-5 {
+  @include marginY(5rem);
+}
+.my-4 {
+  @include marginY(4rem);
+}
+.my-3 {
+  @include marginY(3rem);
+}
+.my-2 {
+  @include marginY(2rem);
+}
+.my-1 {
+  @include marginY(1rem);
+}
+
+.ml-5 {
+  @include marginL(5rem);
+}
+.ml-4 {
+  @include marginL(4rem);
+}
+.ml-3 {
+  @include marginL(3rem);
+}
+.ml-2 {
+  @include marginL(2rem);
+}
+.ml-1 {
+  @include marginL(1rem);
+}
+
+.mr-5 {
+  @include marginR(5rem);
+}
+.mr-4 {
+  @include marginR(4rem);
+}
+.mr-3 {
+  @include marginR(3rem);
+}
+.mr-2 {
+  @include marginR(2rem);
+}
+.mr-1 {
+  @include marginR(1rem);
+}
+
+.mt-5 {
+  @include marginT(5rem);
+}
+.mt-4 {
+  @include marginT(4rem);
+}
+.mt-3 {
+  @include marginT(3rem);
+}
+.mt-2 {
+  @include marginT(2rem);
+}
+.mt-1 {
+  @include marginT(1rem);
+}
+
+.mb-5 {
+  @include marginB(5rem);
+}
+.mb-4 {
+  @include marginB(4rem);
+}
+.mb-3 {
+  @include marginB(3rem);
+}
+.mb-2 {
+  @include marginB(2rem);
+}
+.mb-1 {
+  @include marginB(1rem);
+}
+
+//padding
+.p-5 {
+  @include padding(5rem);
+}
+.p-4 {
+  @include padding(4rem);
+}
+.p-3 {
+  @include padding(3rem);
+}
+.p-2 {
+  @include padding(2rem);
+}
+.p-1 {
+  @include padding(1rem);
+}
+
+.px-5 {
+  @include paddingX(5rem);
+}
+.px-4 {
+  @include paddingX(4rem);
+}
+.px-3 {
+  @include paddingX(3rem);
+}
+.px-2 {
+  @include paddingX(2rem);
+}
+.px-1 {
+  @include paddingX(1rem);
+}
+
+.py-5 {
+  @include paddingY(5rem);
+}
+.py-4 {
+  @include paddingY(4rem);
+}
+.py-3 {
+  @include paddingY(3rem);
+}
+.py-2 {
+  @include paddingY(2rem);
+}
+.py-1 {
+  @include paddingY(1rem);
+}
+
+.pl-5 {
+  @include paddingL(5rem);
+}
+.pl-4 {
+  @include paddingL(4rem);
+}
+.pl-3 {
+  @include paddingL(3rem);
+}
+.pl-2 {
+  @include paddingL(2rem);
+}
+.pl-1 {
+  @include paddingL(1rem);
+}
+
+.pr-5 {
+  @include paddingR(5rem);
+}
+.pr-4 {
+  @include paddingR(4rem);
+}
+.pr-3 {
+  @include paddingR(3rem);
+}
+.pr-2 {
+  @include paddingR(2rem);
+}
+.pr-1 {
+  @include paddingR(1rem);
+}
+
+.pt-5 {
+  @include paddingT(5rem);
+}
+.pt-4 {
+  @include paddingT(4rem);
+}
+.pt-3 {
+  @include paddingT(3rem);
+}
+.pt-2 {
+  @include paddingT(2rem);
+}
+.pt-1 {
+  @include paddingT(1rem);
+}
+
+.pb-5 {
+  @include paddingB(5rem);
+}
+.pb-4 {
+  @include paddingB(4rem);
+}
+.pb-3 {
+  @include paddingB(3rem);
+}
+.pb-2 {
+  @include paddingB(2rem);
+}
+.pb-1 {
+  @include paddingB(1rem);
+}
+
+@media (max-width: 578px) {
+  .m-5 {
+    @include margin(2.5rem);
+  }
+  .m-4 {
+    @include margin(2rem);
+  }
+  .m-3 {
+    @include margin(1.5rem);
+  }
+  .m-2 {
+    @include margin(1rem);
+  }
+  .m-1 {
+    @include margin(0.5rem);
+  }
+
+  .my-5 {
+    @include marginY(2.5rem);
+  }
+  .my-4 {
+    @include marginY(2rem);
+  }
+  .my-3 {
+    @include marginY(1.5rem);
+  }
+  .my-2 {
+    @include marginY(1rem);
+  }
+  .my-1 {
+    @include marginY(0.5rem);
+  }
+
+  .mx-5 {
+    @include marginX(2.5rem);
+  }
+  .mx-4 {
+    @include marginX(2rem);
+  }
+  .mx-3 {
+    @include marginX(1.5rem);
+  }
+  .mx-2 {
+    @include marginX(1rem);
+  }
+  .mx-1 {
+    @include marginX(0.5rem);
+  }
+
+  .ml-5 {
+    @include marginL(2.5rem);
+  }
+  .ml-4 {
+    @include marginL(2rem);
+  }
+  .ml-3 {
+    @include marginL(1.5rem);
+  }
+  .ml-2 {
+    @include marginL(1rem);
+  }
+  .ml-1 {
+    @include marginL(0.5rem);
+  }
+
+  .mr-5 {
+    @include marginR(2.5rem);
+  }
+  .mr-4 {
+    @include marginR(2rem);
+  }
+  .mr-3 {
+    @include marginR(1.5rem);
+  }
+  .mr-2 {
+    @include marginR(1rem);
+  }
+  .mr-1 {
+    @include marginR(0.5rem);
+  }
+
+  .p-5 {
+    @include padding(2.5rem);
+  }
+  .p-4 {
+    @include padding(2rem);
+  }
+  .p-3 {
+    @include padding(1.5rem);
+  }
+  .p-2 {
+    @include padding(1rem);
+  }
+  .p-1 {
+    @include padding(0.5rem);
+  }
+
+  .py-5 {
+    @include paddingY(2.5rem);
+  }
+  .py-4 {
+    @include paddingY(2rem);
+  }
+  .py-3 {
+    @include paddingY(1.5rem);
+  }
+  .py-2 {
+    @include paddingY(1rem);
+  }
+  .py-1 {
+    @include paddingY(0.5rem);
+  }
+
+  .px-5 {
+    @include paddingX(2.5rem);
+  }
+  .px-4 {
+    @include paddingX(2rem);
+  }
+  .px-3 {
+    @include paddingX(1.5rem);
+  }
+  .px-2 {
+    @include paddingX(1rem);
+  }
+  .px-1 {
+    @include paddingX(0.5rem);
+  }
+
+  .pl-5 {
+    @include paddingL(2.5rem);
+  }
+  .pl-4 {
+    @include paddingL(2rem);
+  }
+  .pl-3 {
+    @include paddingL(1.5rem);
+  }
+  .pl-2 {
+    @include paddingL(1rem);
+  }
+  .pl-1 {
+    @include paddingL(0.5rem);
+  }
+
+  .pr-5 {
+    @include paddingR(2.5rem);
+  }
+  .pr-4 {
+    @include paddingR(2rem);
+  }
+  .pr-3 {
+    @include paddingR(1.5rem);
+  }
+  .pr-2 {
+    @include paddingR(1rem);
+  }
+  .pr-1 {
+    @include paddingR(0.5rem);
+  }
+
+  .pt-5 {
+    @include paddingT(2.5rem);
+  }
+  .pt-4 {
+    @include paddingT(2rem);
+  }
+  .pt-3 {
+    @include paddingT(1.5rem);
+  }
+  .pt-2 {
+    @include paddingT(1rem);
+  }
+  .pt-1 {
+    @include paddingT(0.5rem);
+  }
+
+  .pb-5 {
+    @include paddingB(2.5rem);
+  }
+  .pb-4 {
+    @include paddingB(2rem);
+  }
+  .pb-3 {
+    @include paddingB(1.5rem);
+  }
+  .pb-2 {
+    @include paddingB(1rem);
+  }
+  .pb-1 {
+    @include paddingB(0.5rem);
+  }
+}

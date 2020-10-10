@@ -1,0 +1,83 @@
+@import "./../../../Resources//Sass/utilities/variables";
+footer.footer {
+  background: #f8f8f8;
+  margin-top: 30px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+
+  .social-media {
+    display: flex;
+    .icon-container {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 5px;
+      box-shadow: $box-shadow;
+      background: white;
+      ion-icon {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 851px) {
+  footer.footer {
+    .logo img {
+      height: 80px;
+      width: auto;
+    }
+    .social-media {
+      .icon-container {
+        width: 43px;
+        height: 43px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  footer.footer {
+    .logo img {
+      height: 70px;
+      width: auto;
+    }
+    .social-media {
+      .icon-container {
+        width: 38px;
+        height: 38px;
+        ion-icon {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 548px) {
+  footer.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .container {
+      flex-direction: column;
+      & > * {
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        font-weight: 100;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .logo img {
+      height: 90px;
+    }
+  }
+}

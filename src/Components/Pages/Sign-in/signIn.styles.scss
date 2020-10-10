@@ -1,0 +1,24 @@
+@import "./../../../Resources//Sass//utilities/variables";
+
+.sign-in {
+  font-family: Dosis, sans-serif;
+  color: #464646;
+  background: $form-bg-color;
+  & > * {
+    font-family: inherit;
+  }
+}
+
+#reset-password {
+  min-height: 60vh;
+  background: $form-bg-color;
+}
+
+@media (max-width: 980px) {
+  #sign-layout {
+    flex-direction: column;
+    & > * {
+      width: 100%;
+    }
+  }
+}

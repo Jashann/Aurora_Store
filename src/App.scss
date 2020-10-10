@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import ".//Resources/Sass/utilities/variables";
+@import "./Resources/Sass/utilities/mixins";
+@import "./Resources/Sass/utilities/margin&padding";
+
+// fonts- Quicksand,Dosis, Parisienne
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Utlities
+
+// Text-color
+.text {
+  &-primary {
+    color: $text-color;
+  }
+}
+
+// Display
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+
+// flex-center
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Text-align
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+// Buttons
+
+//font
+.font-1 {
+  font-family: Quicksand, sans-serif;
+}
+.font-2 {
+  font-family: Dosis, sans-serif;
+}
+.font-3 {
+  font-family: Parisienne, sans-serif;
+}
+
+// Container
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}

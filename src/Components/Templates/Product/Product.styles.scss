@@ -1,0 +1,53 @@
+@import "./../../../Resources//Sass/utilities/variables";
+@import "./../../../Resources/Sass/utilities/mixins";
+
+.product {
+  width: 230px;
+  height: 300px;
+  justify-self: center;
+  position: relative;
+  &-main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+    }
+    &:hover .btn-cart {
+      background: #088553a1;
+    }
+    .btn-cart {
+      @include absolute-center;
+      @include flex-center;
+      transform: translate(-50%, 200%);
+      background: #ffffff40;
+      cursor: pointer;
+      border: none;
+      /* outline: none; */
+      border-radius: 100px;
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Quicksand", Dosis;
+      transition: 0.4s;
+      width: 80%;
+      height: 45px;
+      margin-top: -20px;
+      box-shadow: $box-shadow;
+      &:focus {
+        outline: none;
+        background: #004b2da1;
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .product {
+    width: 166px;
+    height: 259px;
+    .btn-cart {
+      width: 92%;
+    }
+  }
+}

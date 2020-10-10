@@ -1,0 +1,79 @@
+@import "./../../../Resources//Sass//utilities/variables";
+@import "./../../../Resources//Sass//utilities/mixins";
+
+.showcase-grid-item {
+  position: relative;
+  display: flex;
+  flex-basis: 48%;
+  margin: 1%;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover &-content {
+    background: #36e28c2a;
+    transform: scale(2.1);
+  }
+  &-img {
+    width: 100%;
+  }
+  &-content {
+    position: absolute;
+    @include flex-center;
+    font-family: "Parisienne", cursive;
+    font-size: 4rem;
+    opacity: 1;
+    transition: 0.4s;
+    transform: scale(2);
+    background: #36e28c18;
+    width: 100%;
+    height: 100%;
+
+    #text {
+      position: absolute;
+      z-index: 2;
+      color: #000e07ad;
+    }
+    ion-icon {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .showcase-grid-item-content {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 936px) {
+  .showcase-grid-item-content {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 765px) {
+  .showcase-grid-item-content {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 655px) {
+  .showcase-grid-item-content {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .showcase-grid-item-content {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .showcase-grid-item-content {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .showcase-grid-item-content {
+    font-size: 1.6rem;
+  }
+}

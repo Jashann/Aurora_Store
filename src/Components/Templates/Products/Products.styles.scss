@@ -1,0 +1,41 @@
+@import "./../../../Resources/Sass/utilities/variables";
+
+.products {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  column-gap: 10px;
+  row-gap: 80px;
+}
+
+.products-category {
+  font-size: 3rem;
+  font-family: "Parisienne", cursive;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 568px) {
+  .products {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .products-container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 403px) {
+  .products {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    .products-container {
+      grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+    }
+  }
+}

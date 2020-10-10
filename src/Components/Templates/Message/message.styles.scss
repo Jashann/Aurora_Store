@@ -1,0 +1,33 @@
+@import "./../../../Resources/Sass/utilities/mixins";
+@import "./../../../Resources/Sass/utilities/variables";
+
+//messages
+.messages {
+  display: none;
+  background: $form-bg-color;
+  .message {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .close-btn {
+      ion-icon {
+        font-size: 32px;
+        transform: scale(1.2);
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #signInLink {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      flex-basis: 70%;
+    }
+  }
+}
