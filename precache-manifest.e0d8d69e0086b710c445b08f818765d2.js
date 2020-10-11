@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "deed6ee2f490b6958b456f9f3f779e95",
+    "revision": "482a7de647afe5a6b74791231ec84591",
     "url": "/Aurora_Store/index.html"
   },
   {
