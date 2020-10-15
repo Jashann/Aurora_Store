@@ -10,6 +10,7 @@ import { getUserdataOnSnapashotDB } from "./../../../Firebase/db";
 
 // Components
 import CartItem from "./../../Templates/Cart-item/CartItem.component";
+import { StyledButton } from "./../../Templates/Buttons_Styled/botton.styled";
 
 // Data
 import products from "./../../../Resources/data";
@@ -89,9 +90,9 @@ function CartPage() {
           ))
         : null}
       <div className="d-flex">
-        <button className="btn btn-primary mt-2 mb-1">
+        <StyledButton primary className="mt-2 mb-1">
           Pay Now {totalPrice ? `:  $${totalPrice}` : null}
-        </button>
+        </StyledButton>
       </div>
     </div>
   );

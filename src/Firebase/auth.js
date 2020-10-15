@@ -13,27 +13,31 @@ export const signInWithEmailAndPassword = (email, password) => {
     .catch((error) => MessageHandler.showMessage(error.message));
 };
 
-export const signInWithGoogle = (email, password) => {
+export const signInWithGoogle = () => {
   auth
     .signInWithPopup(providerGoogle)
     .then((res) => MessageHandler.showMessage("[Google], Signed in"))
     .catch((err) => MessageHandler.showMessage(err.message));
 };
 
-export const signUpWithEmailAndPassword = (email, password) => {
+export const signUpWithEmailAndPassword = (email, password, callBack) => {
   auth
     .createUserWithEmailAndPassword(email, password)
     .then((res) => {
       verifyEmail();
+      callBack(res);
     })
-    .catch((error) => MessageHandler.showMessage(error.message));
+    .catch((error) => {
+      MessageHandler.showMessage(error.message);
+      callBack(false);
+    });
 };
 
 export const onStateChanged = (callback) => {
   auth.onAuthStateChanged((user) => {
     if (user) {
       //if Email is not verified
-      if (!user.emailVerified) signOut();
+      if (!user.emailVerified) signOut(false);
       else {
         console.log("[AUTH]", "User is currently logged in");
         callback(user);
@@ -57,14 +61,15 @@ function verifyEmail() {
     .catch((error) => MessageHandler.showMessage(error.errorMessage));
 }
 
-export function signOut() {
+export function signOut(ifShowMessage) {
   let currentUser = auth.currentUser;
   auth
     .signOut()
     .then(() => {
-      MessageHandler.showMessage(
-        `[Sign out] ${currentUser.email} is signed out`
-      );
+      if (ifShowMessage !== false)
+        MessageHandler.showMessage(
+          `[Sign out] ${currentUser.email} is signed out`
+        );
     })
     .catch((error) => console.log(error));
 }

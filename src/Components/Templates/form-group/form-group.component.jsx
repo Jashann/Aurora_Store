@@ -16,8 +16,8 @@ const StyledInput = styled.input`
   border: none;
   height: 40px;
   width: 100%;
-  background: #0000000d;
   color: #333;
+  background: #e8f0fe;
   padding: 0px 19px;
   display: block;
   border-radius: 100px;
@@ -40,7 +40,7 @@ class FormGroup extends React.Component {
       <StyledFormGroup>
         <StyledLabel> {children} </StyledLabel>
         {/* <input required autoComplete="false" {...otherprops} /> */}
-        <StyledInput />
+        <StyledInput required autoComplete="false" {...otherprops} />
       </StyledFormGroup>
     );
   }

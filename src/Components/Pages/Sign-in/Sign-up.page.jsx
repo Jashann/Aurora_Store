@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import FormGroup from "../../Templates/form-group/form-group.component";
 
@@ -11,15 +11,23 @@ import { signUpWithEmailAndPassword } from "../../../Firebase/auth";
 import { MessageHandler } from "../../../UIHandler/uiHandler";
 
 const SignUp = () => {
+  const history = useHistory();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (password === confirmPassword)
-      signUpWithEmailAndPassword(email, password);
-    else MessageHandler.showMessage("Passwords don't match");
+    if (password === confirmPassword) {
+      signUpWithEmailAndPassword(email, password, function (res) {
+        if (res) history.push("/Aurora_Store/sign-in");
+      });
+    } else MessageHandler.showMessage("Passwords don't match");
+
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
   };
 
   const handleChange = (e) => {
