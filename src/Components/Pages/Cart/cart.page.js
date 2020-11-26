@@ -75,7 +75,7 @@ function CartPage() {
     }
   }
 
-  return (
+    return (
     <div className="container cart-items mx-3 mb-5">
       <div className="cart-header">
         <span className="product-img">Product</span>

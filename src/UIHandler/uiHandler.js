@@ -1,6 +1,10 @@
 export const MessageHandler = (() => {
   // Private functions and Variables
   function showMessage(message, type) {
+    if (message === "The email address is badly formatted.")
+      // eslint-disable-next-line no-restricted-globals
+      setTimeout(location.reload(), 3000);
+
     let messagesDiv = document.querySelector(".messages");
     messagesDiv.style.display = "block";
     const div = document.createElement("div");
